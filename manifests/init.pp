@@ -12,6 +12,7 @@ class bareos (
   $file_group       = $::bareos::params::file_group,
   $file_mode        = $::bareos::params::file_mode,
   $file_dir_mode    = $::bareos::params::file_dir_mode,
+  $user_groups      = $::bareos::params::user_groups,
   $repo_release     = $::bareos::params::repo_release,
   $manage_repo      = $::bareos::params::manage_repo,
   $manage_user      = $::bareos::params::manage_user,
@@ -60,7 +61,7 @@ class bareos (
       comment    => 'Bareos system user',
       home       => '/var/lib/bareos',
       shell      => '/bin/false',
-      groups     => ['disk', 'tape', $file_group],
+      groups     => ['disk', 'tape', $file_group] + $user_groups,
       system     => true,
       tag        => ['bareos', 'bareos_core'],
     }

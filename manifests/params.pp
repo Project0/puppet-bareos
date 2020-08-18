@@ -5,6 +5,7 @@ class bareos::params {
   $file_dir_mode = '0755'
   $file_owner = 'bareos'
   $file_group = 'bareos'
+  $user_groups = []
   $config_dir = '/etc/bareos'
   $config_dir_webui = '/etc/bareos-webui'
 
