@@ -97,7 +97,7 @@ module Puppet::Parser::Functions
           when 'replace_option'
             value_in_array = %w[always ifnewer ifolder never]
           when 'device_type'
-            value_in_array = %w[tape file fifo gfapi rados]
+            value_in_array = %w[tape file fifo gfapi rados droplet]
           when 'compression_algorithm'
             value_in_array = %w[gzip lzo lzfast lz4 lz4hc]
           else
