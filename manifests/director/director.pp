@@ -424,7 +424,7 @@ class bareos::director::director (
       [$dir_port, 'Dir Port', 'port', false],
       [$dir_source_address, 'Dir Source Address', 'address', false],
       [$fd_connect_timeout, 'Fd Connect Timeout', 'time', false],
-      [$heartbeat_interval, 'Heartbeat Interval', 'time', false],
+      [$heartbeat_interval, 'Heartbeat Interval', 'integer', false],
       [$key_encryption_key, 'Key Encryption Key', 'autopassword', false],
       [$log_timestamp_format, 'Log Timestamp Format', 'string', false],
       [$maximum_concurrent_jobs, 'Maximum Concurrent Jobs', 'pint32', false],
